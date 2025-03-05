@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Lenguaje -->
+<head>
+    <!-- Configuracion basica del documento -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contactanos</title>
+    <style>
+        /* Estilos generales del cuerpo de la pag */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilos para el encabezado */
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            justify-content: center;
+        }
+
+        /* tamaño para la imagen del logo en el encabezado */
+        header img {
+            height: 80px;
+            margin-right: 15px;
+        }
+
+        /* tamaño para el titulo en el encabezado */
+        header h1 {
+            margin: 0;
+            font-size: 60px;
+        }
+
+        /* Estilos para la barra de menu */
+        .menu-bar {
+            background-color: red;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Estilos para el contenedor del menu */
+        .menu-container {
+            background-color: red;
+            padding: 8px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Estilos para el botón del menu */
+        .menu-button {
+            background-color: yellow;
+            color: black;
+            font-weight: bold;
+            padding: 6px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Estilos para el contenido desplegable del menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Estilos para los enlaces dentro del menu desplegable */
+        .dropdown-content a {
+            color: black;
+            padding: 12px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        /* Estilos para los enlaces al pasar el mouse */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Estilos para mostrar el menu desplegable al pasar el mouse */
+        .menu-button:hover + .dropdown-content,
+        .dropdown-content:hover {
+            display: block;
+        }
+
+        /* Estilos para los creditos/copy (color, centrado) */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado de la pagina con el logo y el titulo -->
+    <header>
+        <img src="Imagenes/Logo ferreplus.jpg" alt="Logo de la página">
+        <h1>Contactanos</h1>
+    </header>
+    
+    <!-- Contenedor del menu con boton y opciones desplegables -->
+    <div class="menu-container">
+        <button class="menu-button">Menú</button>
+        <div class="dropdown-content">
+            <a href="Principal.html">Inicio</a>
+            <a href="Herramientas.html">Herramientas</a>
+            <a href="Servicios.html">Servicios</a>
+            <a href="Contactanos.html">Contáctanos</a>
+        </div>
+    </div>
+    
+    <!-- Contenedor para la información de contacto y el mapa -->
+    <div style="display: flex; justify-content: space-between; padding: 20px;">
+        <!-- Seccion de informacion de contacto -->
+        <div class="contact-info" style="flex: 1;">
+            <p><strong>Email:</strong> <a href="mailto:info@ferreplus.com"> info@ferreplus.com</a></p>
+            <p><strong>Teléfono:</strong> <a href="tel:+526647445521"> +52 664 744 5521</a></p>
+            <p><strong>Dirección:</strong> Av. Causa #423, Col. Buenos Aires Norte, B.C Tijuana, México</p>
+            <p><strong>Horario de atención:</strong> Lunes a viernes: 8:00 AM - 6:00 PM | Sábado: 9:00 AM - 2:00 PM</p>
+            <p><strong>Síguenos en nuestras redes sociales:</strong></p>
+            <p><a href="http://www.cobachbc.edu.mx/inicio" target="_blank"> Facebook</a></p>
+            <p><a href="https://www.instagram.com/bbpm_priv/" target="_blank"> Instagram</a></p>
+            <p><a href="https://x.com/ferreplus" target="_blank">Twitter</a></p>
+        </div>
+        <!-- Seccion del mapa de ubicación -->
+        <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+            <img src="Imagenes/mapa contacto.jpg" alt="Mapa de ubicación" style="width: 400px; height: auto; border-radius: 10px;">
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <!-- Seccion de preguntas frecuentes -->
+    <div style="text-align: center;">
+        <h2>Preguntas Frecuentes</h2>
+        <p><strong>Cuáles son los métodos de pago aceptados?</strong><br>
+            Aceptamos pagos con tarjeta de crédito, débito y transferencias bancarias.</p>
+        <p><strong>Realizan envíos a domicilio?</strong><br>
+            Sí, hacemos envíos dentro de la ciudad y a nivel nacional con costo adicional.</p>
+        <p><strong>Tienen servicio de atención al cliente?</strong><br>
+            Sí, puedes contactarnos de lunes a viernes de 8:00 AM a 6:00 PM.</p>
+    </div>
+    <br>
+    <br>
+
+    <!-- Creditos/informacion de derechos reservados y ubicacion -->
+    <footer>
+        <p>&copy; Ferresplus<br>
+            2025 Todos los derechos reservados<br>
+            Tijuana B.C.<br>
+            Cobach El Florido :v
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Lenguaje -->
+<head>
+    <!-- Configuracion basica del documento -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Servicios</title>
+    <style>
+        /* Estilos generales del cuerpo de la pag */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Estilos para el encabezado */
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            justify-content: center;
+        }
+
+        /* Estilos para la imagen del logo en el encabezado */
+        header img {
+            height: 80px;
+            margin-right: 15px;
+        }
+
+        /* Estilos para el titulo en el encabezado */
+        header h1 {
+            margin: 0;
+            font-size: 60px;
+        }
+
+        /* Estilos para el contenedor del menú */
+        .menu-container {
+            background-color: red;
+            padding: 8px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Estilos para el botón del menu */
+        .menu-button {
+            background-color: yellow;
+            color: black;
+            font-weight: bold;
+            padding: 6px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Estilos para el contenido desplegable del menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* estilos para los enlaces dentro del menú desplegable */
+        .dropdown-content a {
+            color: black;
+            padding: 12px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        /* estilos para los enlaces al pasar el mouse */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Estilos para mostrar el menú desplegable al pasar el mouse */
+        .menu-button:hover + .dropdown-content,
+        .dropdown-content:hover {
+            display: block;
+        }
+
+        /* Estilos para el contenedor principal de los servicios */
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* estilos para el título principal de la sección de servicios */
+        h2 {
+            color: #510103;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        /* estilos para los subtítulos de las categorías de servicios */
+        h3 {
+            color: #C00;
+            margin: 15px 0;
+            font-size: 23px;
+            font-family: bold italic;
+        }
+
+        /* estilos para las tarjetas de servicios */
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 15px 0;
+            padding: 15px;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        /* Estilos para el precio dentro de las tarjetas de servicios */
+        .precio {
+            font-weight: bold;
+            color: green;
+        }
+
+        /* estilos de los creditos/copy */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 14px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado de la pagina con el logo y el titulo -->
+    <header>
+        <img src="Imagenes/Logo ferreplus.jpg" alt="Logo de la página">
+        <h1>Servicios</h1>
+    </header>
+
+    <!-- Contenedor del menu con boton y opciones desplegables -->
+    <div class="menu-container">
+        <button class="menu-button">Menú</button>
+        <div class="dropdown-content">
+            <a href="Principal.html">Inicio</a>
+            <a href="Herramientas.html">Herramientas</a>
+            <a href="Servicios.html">Servicios</a>
+            <a href="Contactanos.html">Contáctanos</a>
+        </div>
+    </div>
+
+    <!-- Contenedor principal de los servicios -->
+    <div class="container">
+        <h2>Contamos a disposición los siguientes servicios al cliente</h2>
+
+        <!-- Seccion de servicios basicos -->
+        <h3>Servicios básicos</h3>
+        <div class="service-card">
+            <strong>Corte de materiales:</strong> Madera, vidrio, tubos de PVC, metal, etc. 
+            <span class="precio">$20 - $150 MXN</span>
+        </div>
+        <div class="service-card">
+            <strong>Copias de llaves:</strong> Duplicado de llaves tradicionales y de seguridad. 
+            <span class="precio">$30 - $100 MXN</span>
+        </div>
+        <div class="service-card">
+            <strong>Venta a granel:</strong> Tornillos, clavos, tuercas y otros materiales por unidad o peso. 
+            <span class="precio">Desde $5 MXN</span>
+        </div>
+
+        <!-- Seccion de servicios especializados -->
+        <h3>Servicios especializados</h3>
+        <div class="service-card">
+            <strong>Carga de pilas y baterías:</strong> Para herramientas recargables o automóviles. 
+            <span class="precio">$50 - $300 MXN</span>
+        </div>
+        <div class="service-card">
+            <strong>Asesoría en mejoras del hogar:</strong> Carpintería, plomería o electricidad. 
+            <span class="precio">$200 MXN/hora</span>
+        </div>
+        <div class="service-card">
+            <strong>Afiliaciones con técnicos:</strong> Contacto con plomeros, electricistas o albañiles de confianza. 
+            <span class="precio">Desde $250 MXN</span>
+        </div>
+        <div class="service-card">
+            <strong>Renta de herramientas:</strong> Martillos eléctricos, taladros industriales, entre otros. 
+            <span class="precio">$100 - $500 MXN/día</span>
+        </div>
+        <div class="service-card">
+            <strong>Fabricación de estructuras metálicas:</strong> Soldadura y armado a medida. 
+            <span class="precio">Desde $500 MXN</span>
+        </div>
+
+        <!-- Seccion de otros servicios extra -->
+        <h3>Otros servicios extra</h3>
+        <div class="service-card">
+            <strong>Mezcla de pintura:</strong> Para obtener colores personalizados. 
+            <span class="precio">$50 MXN por litro</span>
+        </div>
+        <div class="service-card">
+            <strong>Instalación de productos:</strong> Como cerraduras, lámparas o muebles. 
+            <span class="precio">$150 - $500 MXN</span>
+        </div>
+        <div class="service-card">
+            <strong>Entrega a domicilio:</strong> Para pedidos grandes o pesados. 
+            <span class="precio">Desde $100 MXN</span>
+        </div>
+        <div class="service-card">
+            <strong>Reciclaje de materiales:</strong> Recepción de baterías usadas y otros productos reciclables. 
+            <span class="precio">Gratis</span>
+        </div>
+        <div class="service-card">
+            <strong>Reparación de herramientas eléctricas:</strong> Diagnóstico y solución de fallas. 
+            <span class="precio">$200 - $800 MXN</span>
+        </div>
+    </div>
+
+    <!-- Creditos/informacion de derechos reservados y ubicacion -->
+    <footer>
+        <p>&copy; Ferreplus<br>
+            2025 Todos los derechos reservados<br> 
+            Tijuana, B.C.<br> 
+            Cobach El Florido
+        </p>
+    </footer>
+</body>
+</html>

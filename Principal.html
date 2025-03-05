@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Lenguaje -->
+<head>
+    <!-- configuracion basica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title> <!-- Titulo de la pag -->
+    <style>
+        /* estilos generales del cuerpo de la pag */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* estilos para el encabezado */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Estilos para la imagen del logo en el encabezado */
+        header img {
+            height: 100px;
+            margin-right: 15px;
+        }
+
+        /* estilos para el título en el encabezado */
+        header h1 {
+            margin: 0;
+            font-size: 90px;
+        }
+
+        /* estilos para la sección del slogan */
+        .slogan {
+            background-color: red;
+            height: 35px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: cursive;
+        }
+
+        /* estilos para el contenedor de las secciones principales */
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Estilos para cada sección individual */
+        .seccion {
+            width: 30%;
+            padding: 10px;
+            border: 4px solid #CCC;
+            text-align: center;
+        }
+
+        /* estilos para el título de cada sección */
+        .seccion h1 {
+            color: #C00;
+            font-size: 30px;
+        }
+
+        /* Estilos para las imágenes dentro de las secciones */
+        .seccion img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* estilos para el pie de pag */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 12px;
+            background-color: #333;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- encabezado de la pagina con el logo y el titulo -->
+    <header>
+        <img src="Imagenes/Logo ferreplus.jpg" alt="Logo de la página">
+        <h1>Ferreplus</h1>
+    </header>
+
+    <!-- texto del slogan -->
+    <div class="slogan">
+        Construyendo tus sueños, herramienta a herramienta
+    </div>
+
+    <!-- Contenedor principal que agrupa las secciones de Herramientas, Servicios y Contactanos con link-->
+    <div class="contenedor">
+        <!-- Seccion de Herramientas -->
+        <div class="seccion">
+            <h1>Herramientas</h1>
+            <a href="Herramientas.html">
+                <img src="Imagenes/Img Herramientas.jpg" alt="Herramientas">
+            </a>
+        </div>
+        <!-- Seccion de Servicios -->
+        <div class="seccion">
+            <h1>Servicios</h1>
+            <a href="Servicios.html">
+                <img src="Imagenes/Img Servicios.jpg" alt="Servicios">
+            </a>
+        </div>
+        <!-- Seccion de Contactanos -->
+        <div class="seccion">
+            <h1>Contáctanos</h1>
+            <a href="Contactanos.html">
+                <img src="Imagenes/Img Contacto.jpg" alt="Logo contáctenos">
+            </a>
+        </div>
+    </div>
+
+    <!-- pie de pagina con informacion de derechos reservados y fecha -->
+    <footer>
+        <p>&copy; Ferreplus<br>
+        2025 Todos los derechos reservados<br>
+        Tijuana B.C.<br>
+        Cobach El Florido</p>
+    </footer>
+</body>
+</html>
